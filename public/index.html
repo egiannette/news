@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kxan News</title>
+	<style type="text/css">
+		#wrapper{
+			width: 960px;
+			margin-left: auto;
+        	margin-right: auto;
+        	padding-top: 5%;
+		}
+	
+		#notes{
+			float:left;
+        	width: 30%;
+        	height: 700px;
+		}
+		#articles{
+			display: inline-block;
+        	width: 30%;
+		}
+		#showNote{
+			float:right;
+        	width: 30%;
+        
+		}
+		#showNote{
+			width: 200px;
+		}
+		textarea, input {
+        display: block;
+        width: 100%;
+        background-color: #FCF5C7;
+      }
+      input {
+        height: 36px;
+        font-size: 24px;
+      }
+      textarea {
+        height: 200px;
+        font-size: 18px;
+      }
+
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+	<h1>Hello Austinite!</h1>
+	
+	<div id="notes">
+		<h2>Enter a Note</h2>
+			<input type="text" name="title" placeholder="title">
+			<textarea type= "text" name="body" id="createNote">Write Note Here</textarea>
+
+			<input type="submit">
+	</div>
+	<div id="articles">
+	</div>
+	<div id="showNote">
+			<h2>Show/Delete</h2>
+			<input type="text" id="titleinput">
+			<textarea type= "text" name="body" id="showNote">Notes</textarea>
+
+			<input type="submit">
+	</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
